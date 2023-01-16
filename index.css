@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.main-nav {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.menu > ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu > ul > li {
+  padding: 5px 10px;
+  border-right: 1px solid #000;
+  cursor: pointer;
+}
+
+.menu > ul > li:nth-last-child(1) {
+  border-right: none;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+#time {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.all-books {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.books {
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  max-width: 680px;
+  margin: 10px auto;
+}
+
+.gray {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.book {
+  /* background-color: #000; */
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px 5px 10px;
+}
+
+.book-info {
+  display: flex;
+}
+
+.author {
+  padding: 0 8px;
+}
+
+.remove {
+  box-shadow: 5px 5px;
+  background-color: #fff;
+}
+
+.remove:active {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+.add-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  margin: 20px auto;
+  border: none;
+  border-top: 2px solid;
+  width: 120px;
+}
+
+.f-book {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.f-book input {
+  margin: 5px;
+  border: 2px solid #000;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+#add-book {
+  box-shadow: 3px 3px;
+  transition: 2s;
+}
+
+#add-book:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  border: 1px solid #000;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  width: 98vw;
+}
