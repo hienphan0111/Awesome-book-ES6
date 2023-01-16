@@ -1,59 +1,21 @@
-function updateTime() {
-  const time = new Date();
-  const displayTime = document.getElementById('time');
-  displayTime.innerText = time;
+import renderBook from './modules/render-books.js';
+import { Books } from './modules/books-collection.js';
+import { DateTime } from './modules/luxon.js';
+
+const getTime = () => {
+  const time = document.getElementById('time');
+  const now = DateTime.now();
+  const dt = now.toLocaleString(DateTime.DATETIME_SHORT_WITH_SECONDS);
+  time.innerText = dt;
 }
-
-window.setInterval(updateTime, 1000);
-
-class Books {
-  constructor(books) {
-    this.books = books;
-  }
-
-  get getBooks() {
-    return this.books;
-  }
-
-  setBooks(books) {
-    this.books = books;
-  }
-
-  remove(index) {
-    this.books.splice(index, 1);
-  }
-
-  add(book) {
-    this.books.push(book);
-  }
-}
-
-const booksEle = document.querySelector('.books');
-
-const renderBook = (book) => {
-  const bookItem = document.createElement('div');
-  bookItem.classList.add('book');
-  const { id, title, author } = book;
-  if (id % 2 !== 0) {
-    bookItem.classList.add('gray');
-  }
-  const html = `
-    <div class="book-info">
-      <p class="title">"${title}" </p>
-      <p class="author">by ${author}</p>
-    </div>
-    <button class="remove" id=${id}>Remove</button>
-  `;
-  bookItem.innerHTML = html;
-  booksEle.appendChild(bookItem);
-};
+window.setInterval(getTime, 1000);
 
 const booksData = JSON.parse(localStorage.getItem('books'));
 
 const booksBox1 = new Books(booksData);
 
 if (booksData !== null) {
-  booksBox1.getBooks.forEach((book) => renderBook(book));
+  booksBox1.getBooks.forEach((book, index) => renderBook(book, index));
 } else {
   booksBox1.setBooks([]);
 }
@@ -85,6 +47,7 @@ add.addEventListener('click', () => {
     localStorage.setItem('books', JSON.stringify(booksBox1.getBooks));
   }
 });
+
 // Menu interactive
 const listMn = document.getElementById('list');
 const addMn = document.getElementById('add-new');
@@ -107,3 +70,5 @@ contactMn.addEventListener('click', () => {
   addBook.classList.add('hidden');
   contact.classList.remove('hidden');
 });
+
+
