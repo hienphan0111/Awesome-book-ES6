@@ -1,4 +1,3 @@
-
 const booksEle = document.querySelector('.books');
 
 const renderBook = (book, index) => {
