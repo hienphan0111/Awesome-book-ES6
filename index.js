@@ -1,5 +1,5 @@
 import renderBook from './modules/render-books.js';
-import { Books } from './modules/books-collection.js';
+import Books from './modules/books-collection.js';
 import { DateTime } from './modules/luxon.js';
 
 const getTime = () => {
