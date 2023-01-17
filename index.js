@@ -7,7 +7,7 @@ const getTime = () => {
   const now = DateTime.now();
   const dt = now.toLocaleString(DateTime.DATETIME_SHORT_WITH_SECONDS);
   time.innerText = dt;
-}
+};
 window.setInterval(getTime, 1000);
 
 const booksData = JSON.parse(localStorage.getItem('books'));
@@ -70,5 +70,3 @@ contactMn.addEventListener('click', () => {
   addBook.classList.add('hidden');
   contact.classList.remove('hidden');
 });
-
-
