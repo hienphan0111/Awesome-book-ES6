@@ -46,7 +46,7 @@ This website will give user add or remove books from collection.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-To see the demo version, you can <a href="https://hienphan0111.github.io/awesome-books-ES6/"> Click here </a>
+To see the demo version, you can <a href="https://hienphan0111.github.io/Awesome-book-ES6/"> Click here </a>
 
 <!-- GETTING STARTED -->
 
