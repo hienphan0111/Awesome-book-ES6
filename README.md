@@ -36,7 +36,7 @@
 
 # 📖 Awesome books <a name="about-project"></a>
 
-This website will give user add or remove books from collection.
+Users can add and remove books from their collections using this website.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -56,7 +56,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-- IDE(code editor) like: **Vscode**, **Sublime**, etc. 
+- IDEs (code editors) such as **Vscode**, **Sublime**, and so on. 
 - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
 
 ### Setup
@@ -65,7 +65,7 @@ To get a local copy up and running, follow these steps.
 ```bash
 git clone https://github.com/hienphan/Awesome-books.git
 ```
-3. To access cloned directory run:
+3. To access the cloned directory, run:
 ```bash
 cd MyPortfolio
 ```
@@ -73,7 +73,7 @@ cd MyPortfolio
 
 ### Install
 
-> To install linters and other project's dependencies run:
+> To install linters and other projects' dependencies, run:
 ```bash
 npm install
 ```
@@ -104,7 +104,7 @@ Example command:
 
 ### Deployment
 
-The project was deployed which you can access this link: https://hienphan0111.github.io/awesome-book-es6/
+The project was deployed, which you can access at this link: https://hienphan0111.github.io/awesome-book-es6/
 
 <!--
 Example:
@@ -151,7 +151,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse
+I want to thank Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
